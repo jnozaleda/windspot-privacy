@@ -1,44 +1,48 @@
 # Privacy Policy — Windcast
 
-**Last updated:** May 2026
+**Last updated:** October 2026
 
 ## Summary
 
-Windcast does not collect, store, or share any personal data. The app works by querying public weather APIs and saving your searches exclusively on your device.
+Windcast does not collect any personal data. There are no accounts, and your saved searches stay on your iPhone. The app downloads weather data and app content, and sends **anonymous** usage statistics (which features are used) that cannot be linked to you. Nothing is used for advertising or tracking.
 
 ---
 
-## Data the app does NOT collect
+## What we do NOT collect
 
 - No user accounts are created
-- We do not collect your name, email, or any contact information
-- No third-party analytics or trackers are used (no Firebase, no Mixpanel, nothing of the sort)
-- We do not share any information with third parties for advertising purposes
+- We do not collect your name, email, phone number or any contact information
+- We do not collect your precise location, contacts, photos or device identifiers (such as the advertising ID)
+- No third-party analytics, advertising or tracking SDKs are used (no Firebase, no Mixpanel, nothing of the sort)
+- We do not sell or share any information with third parties for advertising purposes
 
 ---
 
 ## Data that leaves your device
 
-When you search for a location or query historical weather data, the app makes calls to:
+When you use the app, it makes calls to:
 
-- **Open-Meteo** (open-meteo.com): An open-source weather API. Geographic coordinates (latitude/longitude) and dates are sent to retrieve historical weather data. Open-Meteo may log these requests in technical logs that are deleted after 90 days. They do not associate this data with your identity.
-- **Apple MapKit**: Apple's geocoding service used to convert place names into coordinates. The text you type in the search field is sent to Apple's servers. Apple may process these queries according to its own privacy policy.
+- **Open-Meteo** (open-meteo.com): an open-source weather API. Geographic coordinates (latitude/longitude) and dates are sent to retrieve historical weather data and forecasts. Open-Meteo may log these requests in technical logs that are deleted after 90 days. They do not associate this data with your identity.
+- **Windcast configuration server** (windcast-config.tempcheck-app.workers.dev, hosted by Cloudflare): the app downloads texts, guides, the list of popular spots and settings from it. No personal data is sent; Cloudflare may keep standard technical logs (IP address, time).
+- **Anonymous usage statistics** (same server): the app sends which features are used (for example "analysed a spot: Tarifa" or "compared 3 spots"), the app and iOS version, and a random identifier created when the app is installed. Cloudflare adds the approximate country. No name, email, precise location or device identifier is sent, and the data cannot be linked to you. It is used only to understand how the app is used and to improve it, and it is kept for 90 days.
+- **Apple MapKit**: Apple's geocoding service, used to convert place names into coordinates. The text you type in the search field is sent to Apple's servers. Apple may process these queries according to its own privacy policy.
 
 You can review the privacy policies of these services at:
 - https://open-meteo.com/en/terms
+- https://www.cloudflare.com/privacypolicy/
 - https://www.apple.com/legal/privacy/
 
 ---
 
 ## Data stored on your device
 
-Any searches you save (spot, date, session time window) are stored **exclusively on your iPhone** using UserDefaults. They are not synced to any server. You can delete them at any time from within the app or by uninstalling it.
+Any searches and comparisons you save (spot, date, session hours) and your settings are stored **only on your iPhone**. The Home Screen widget reads them from a storage area shared only between the app and its widget. They are not synced to any server. You can delete them at any time from within the app or by uninstalling it.
 
 ---
 
-## Notifications
+## Notifications and wind alerts
 
-If you grant permission, the app may send you local reminders about your saved searches. These notifications are generated on your device and do not involve any communication with external servers.
+If you grant permission, the app sends local reminders about your saved searches and "wind alerts" when the forecast for a saved session looks good. To do this, the app (also in the background, when iOS allows it) asks Open-Meteo for the forecast of your saved spots, as described above. The notifications are created on your device; no notification service or push server is involved.
 
 ---
 
