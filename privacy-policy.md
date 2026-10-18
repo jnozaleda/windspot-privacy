@@ -40,6 +40,12 @@ Any searches and comparisons you save (spot, date, session hours) and your setti
 
 ---
 
+## Web app
+
+The free web app at getwindcast.com/app works the same way: it queries Open-Meteo and the Windcast configuration server, and sends the same anonymous usage statistics. Your saved searches, comparisons and settings are stored only in your browser's local storage; clearing your browser data deletes them.
+
+---
+
 ## Notifications and wind alerts
 
 If you grant permission, the app sends local reminders about your saved searches and "wind alerts" when the forecast for a saved session looks good. To do this, the app (also in the background, when iOS allows it) asks Open-Meteo for the forecast of your saved spots, as described above. The notifications are created on your device; no notification service or push server is involved.
@@ -61,4 +67,4 @@ Any future changes will be published on this page with an updated date.
 ## Contact
 
 If you have any questions about this privacy policy, you can reach us at:
-**j.nozaleda.pastor@gmail.com**
+**hello@getwindcast.com**
